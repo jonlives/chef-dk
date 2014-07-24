@@ -161,8 +161,8 @@ describe ChefDK::PolicyfileLock, "building a lockfile" do
 
           "foo" => {
             "version" => "1.0.0",
-            "identifier" => "e4611e9b5ec0636a18979e7dd22537222a2eab47",
-            "dotted_decimal_identifier" => id_to_dotted("e4611e9b5ec0636a18979e7dd22537222a2eab47"),
+            "identifier" => "c8a81f2cf2b09f26909df549a477f515bb75ec89",
+            "dotted_decimal_identifier" => id_to_dotted("c8a81f2cf2b09f26909df549a477f515bb75ec89"),
             "cache_key" => "foo-1.0.0",
             "origin" => nil,
             "source_options" => nil
@@ -375,8 +375,8 @@ describe ChefDK::PolicyfileLock, "building a lockfile" do
 
           "foo" => {
             "version" => "1.0.0",
-            "identifier" => "e4611e9b5ec0636a18979e7dd22537222a2eab47",
-            "dotted_decimal_identifier" => id_to_dotted("e4611e9b5ec0636a18979e7dd22537222a2eab47"),
+            "identifier" => "c8a81f2cf2b09f26909df549a477f515bb75ec89",
+            "dotted_decimal_identifier" => id_to_dotted("c8a81f2cf2b09f26909df549a477f515bb75ec89"),
             "origin" => "https://community.getchef.com/api/cookbooks/foo/1.0.0",
             "cache_key" => "foo-1.0.0",
             "source_options" => nil
@@ -402,8 +402,8 @@ describe ChefDK::PolicyfileLock, "building a lockfile" do
 
           "baz" => {
             "version" => "1.2.3",
-            "identifier"=>"08c6ac1d202f4d59ad67953559084886f6ba710a",
-            "dotted_decimal_identifier" => id_to_dotted("08c6ac1d202f4d59ad67953559084886f6ba710a"),
+            "identifier"=>"5bc8cf02f5ae314c3d80f298f778dfa6536e17e2",
+            "dotted_decimal_identifier" => id_to_dotted("5bc8cf02f5ae314c3d80f298f778dfa6536e17e2"),
             "cache_key" => "baz-f59ee7a5bca6a4e606b67f7f856b768d847c39bb",
             "origin" => "git://github.com/opscode-cookbooks/bar.git",
             "source_options" => nil
@@ -411,8 +411,8 @@ describe ChefDK::PolicyfileLock, "building a lockfile" do
 
           "dep_of_bar" => {
             "version" => "1.2.3",
-            "identifier" => "e6c08ea35bce8009386710d8c9bcd6caa036e8bc",
-            "dotted_decimal_identifier" => id_to_dotted("e6c08ea35bce8009386710d8c9bcd6caa036e8bc"),
+            "identifier" => "7e31d0730ddb5d119d6f940a531ecfd7c3874198",
+            "dotted_decimal_identifier" => id_to_dotted("7e31d0730ddb5d119d6f940a531ecfd7c3874198"),
             "origin" => "https://chef-server.example.com/cookbooks/dep_of_bar/1.2.3",
             "cache_key" => "dep_of_bar-1.2.3",
             "source_options" => nil
@@ -492,8 +492,8 @@ describe ChefDK::PolicyfileLock, "building a lockfile" do
 
           "foo" => {
             "version" => "1.0.0",
-            "identifier" => "e4611e9b5ec0636a18979e7dd22537222a2eab47",
-            "dotted_decimal_identifier" => id_to_dotted("e4611e9b5ec0636a18979e7dd22537222a2eab47"),
+            "identifier" => "c8a81f2cf2b09f26909df549a477f515bb75ec89",
+            "dotted_decimal_identifier" => id_to_dotted("c8a81f2cf2b09f26909df549a477f515bb75ec89"),
             "cache_key" => "foo-1.0.0",
             "origin" => cached_cookbook_uri,
             "source_options" => { "artifactserver" => cached_cookbook_uri, "version" => "1.0.0" }

@@ -81,8 +81,8 @@ describe ChefDK::PolicyfileLock, "installing cookbooks from a lockfile" do
       expect(cookbook_lock.name).to eq("foo")
       expect(cookbook_lock.cache_key).to eq("foo-1.0.0")
       expect(cookbook_lock.version).to eq("1.0.0")
-      expect(cookbook_lock.identifier).to eq("e4611e9b5ec0636a18979e7dd22537222a2eab47")
-      expect(cookbook_lock.dotted_decimal_identifier).to eq("64283078773620835.29863387009503781.60619876117319")
+      expect(cookbook_lock.identifier).to eq("c8a81f2cf2b09f26909df549a477f515bb75ec89")
+      expect(cookbook_lock.dotted_decimal_identifier).to eq("56479847193686175.10855057214514295.269473688185993")
       expect(cookbook_lock.origin).to eq("https://artifact-server.example/foo/1.0.0")
       expect(cookbook_lock.source_options).to eq({ artifactserver: "https://artifact-server.example/foo/1.0.0", version: "1.0.0" })
       expect(cookbook_lock.cookbook_location_spec.version_constraint).to eq(Semverse::Constraint.new("= 1.0.0"))
@@ -93,8 +93,8 @@ describe ChefDK::PolicyfileLock, "installing cookbooks from a lockfile" do
       cookbook_lock = policyfile_lock.cookbook_locks["local-cookbook"]
       expect(cookbook_lock.name).to eq("local-cookbook")
       expect(cookbook_lock.version).to eq("2.3.4")
-      expect(cookbook_lock.identifier).to eq("c72670948830f5e41f0b96fa088b7a37d21ad5d6")
-      expect(cookbook_lock.dotted_decimal_identifier).to eq("56055785335566581.64210429328099467.134380166763990")
+      expect(cookbook_lock.identifier).to eq("3b0f0f73d291dc4cc763f2f5b14806b4fcb8dc25")
+      expect(cookbook_lock.dotted_decimal_identifier).to eq("16623582668034524.21611330321887560.7374403853349")
       expect(cookbook_lock.source).to eq("local-cookbook")
       expect(cookbook_lock.source_options).to eq({ path: "local-cookbook" })
       expect(cookbook_lock.cookbook_location_spec.version_constraint).to eq(Semverse::Constraint.new("= 2.3.4"))
@@ -133,5 +133,3 @@ describe ChefDK::PolicyfileLock, "installing cookbooks from a lockfile" do
   end
 
 end
-
-

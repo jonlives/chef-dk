@@ -36,7 +36,7 @@ describe ChefDK::CookbookProfiler::Identifiers do
     # Entries must be sorted lexically.
     {
       ".kitchen.yml" => "85ba09a085dab072722cb197e04fa805",
-      "Berksfile" => "a668a1df3121f22875e754466f535d8a",
+      "Berksfile" => "5cd9af26c9d2c7fef5946f664fa1b931",
       "README.md" => "0f15038071e5a131bef176cbe2a956d1",
       "chefignore" => "03485640b005eb1083c76518764053dd",
       "metadata.rb" => "4879d0004b177546cfbcfb2fd26df7c8",
@@ -68,12 +68,11 @@ describe ChefDK::CookbookProfiler::Identifiers do
   end
 
   it "generates a Hash of the cookbook's content" do
-    expect(identifiers.content_identifier).to eq("e4611e9b5ec0636a18979e7dd22537222a2eab47")
+    expect(identifiers.content_identifier).to eq("c8a81f2cf2b09f26909df549a477f515bb75ec89")
   end
 
   it "generates a dotted decimal representation of the content hash" do
-    expect(identifiers.dotted_decimal_identifier).to eq("64283078773620835.29863387009503781.60619876117319")
+    expect(identifiers.dotted_decimal_identifier).to eq("56479847193686175.10855057214514295.269473688185993")
   end
 
 end
-
