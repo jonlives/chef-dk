@@ -17,6 +17,8 @@
 
 source 'https://rubygems.org'
 
+gem "chef", github: "opscode/chef", branch: "master"
+
 gemspec :name => "chef-dk"
 
 group(:dev) do
